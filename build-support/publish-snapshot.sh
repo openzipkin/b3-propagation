@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Copyright 2016 The OpenZipkin Authors
+# Copyright 2016-2017 The OpenZipkin Authors
 #
 # Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
 # in compliance with the License. You may obtain a copy of the License at
@@ -16,4 +16,8 @@
 set -euo pipefail
 set -x
 
-./mvnw --batch-mode -s ./.settings.xml -Prelease -nsu -DskipTests deploy
+if ./mvnw help:evaluate -N -Dexpression=project.version | grep -v '\['  | grep -q SNAPSHOT; then
+    ./mvnw --batch-mode -s ./.settings.xml -Prelease -nsu -DskipTests deploy
+else
+    echo "Not building release versions, those are built by the tag builder using the publish-stable.sh script"
+fi
