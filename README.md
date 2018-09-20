@@ -14,10 +14,10 @@ Here's an example flow using multiple header encoding, assuming an HTTP request 
 
 ```
    Client Tracer                                                  Server Tracer     
-┌─────────────────-----─┐                                       ┌────────────────-----──┐
+┌───────────────────────┐                                       ┌───────────────────────┐
 │                       │                                       │                       │
 │   TraceContext        │          Http Request Headers         │   TraceContext        │
-│ ┌─────────────-----─┐ │         ┌───────────────────┐         │ ┌────────────-----──┐ │
+│ ┌───────────────────┐ │         ┌───────────────────┐         │ ┌───────────────────┐ │
 │ │ TraceId           │ │         │ X-B3-TraceId      │         │ │ TraceId           │ │
 │ │                   │ │         │                   │         │ │                   │ │
 │ │ ParentSpanId      │ │ Inject  │ X-B3-ParentSpanId │ Extract │ │ ParentSpanId      │ │
@@ -25,9 +25,9 @@ Here's an example flow using multiple header encoding, assuming an HTTP request 
 │ │ SpanId            │ │         │ X-B3-SpanId       │         │ │ SpanId            │ │
 │ │                   │ │         │                   │         │ │                   │ │
 │ │ Sampling decision │ │         │ X-B3-Sampled      │         │ │ Sampling decision │ │
-│ └──────────-----────┘ │         └───────────────────┘         │ └────────────-----──┘ │
+│ └───────────────────┘ │         └───────────────────┘         │ └───────────────────┘ │
 │                       │                                       │                       │
-└────────────────-----──┘                                       └───────────────-----───┘
+└───────────────────────┘                                       └───────────────────────┘
 ```
 
 # Identifiers
