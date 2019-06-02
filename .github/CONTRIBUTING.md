@@ -1,4 +1,4 @@
-# Contributing to Apache Zipkin (incubating)
+# Contributing to Apache Zipkin B3 Propagation (incubating)
 
 If you would like to contribute code, fork this GitHub repository and
 send a pull request on a branch other than `master`.
