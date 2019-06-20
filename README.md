@@ -1,6 +1,10 @@
 # b3-propagation
 
-This repository elaborates identifiers used to place an operation in a trace tree. These attributes are propagated in-process, and eventually downstream (often via http headers), to ensure all activity originating from the same root are collected together. A sampling decision is made at the root of the trace, and this indicates if trace details should be collected and reported to the tracing system (usually Zipkin) or not.
+B3 Propagation is a specification for the header "b3" and those that start with "x-b3-". These headers are used for trace context propagation across service boundaries.
+
+# Overview
+
+This specification elaborates identifiers used to place an operation in a trace tree. These attributes are propagated in-process, and eventually downstream (often via http headers), to ensure all activity originating from the same root are collected together. A sampling decision is made at the root of the trace, and this indicates if trace details should be collected and reported to the tracing system (usually Zipkin) or not.
 
 # Overall Process
 
