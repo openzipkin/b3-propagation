@@ -25,7 +25,7 @@ Here's an example flow using multiple header encoding, assuming an HTTP request 
 │ │ TraceId           │ │         │ X-B3-TraceId      │         │ │ TraceId           │ │
 │ │                   │ │         │                   │         │ │                   │ │
 │ │ ParentSpanId      │ │ Inject  │ X-B3-ParentSpanId │ Extract │ │ ParentSpanId      │ │
-│ │                   ├─┼────────>│                   ├─────-───┼>│                   │ │
+│ │                   ├─┼────────>│                   ├─────────┼>│                   │ │
 │ │ SpanId            │ │         │ X-B3-SpanId       │         │ │ SpanId            │ │
 │ │                   │ │         │                   │         │ │                   │ │
 │ │ Sampling decision │ │         │ X-B3-Sampled      │         │ │ Sampling decision │ │
