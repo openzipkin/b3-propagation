@@ -348,7 +348,7 @@ Sending a larger second header would increase the pain to others who don't have
 this problem anyway. Put another way, the few proxies missing B3 single header
 support should update instead of burdening more people from lack thereof.
 
-# Showcase: Start propagating from an Apache reverse proxy
+# Showcase: propagation from an Apache reverse proxy
 
 Zipkin users were <a href="https://github.com/openzipkin/zipkin/issues/1479">wondering</a> 
 if it is possible to start B3 propagation from an Apache reverse proxy. @adammichalik 
