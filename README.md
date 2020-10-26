@@ -351,7 +351,7 @@ support should update instead of burdening more people from lack thereof.
 # Showcase: propagation from an Apache reverse proxy
 
 Zipkin users were <a href="https://github.com/openzipkin/zipkin/issues/1479">wondering</a> 
-if it is possible to start B3 propagation from an Apache reverse proxy. @adammichalik 
+if it is possible to start B3 propagation from an Apache reverse proxy. [adammichalik](https://github.com/adammichalik)
 came up with a <a href="https://github.com/openzipkin/zipkin/issues/1479#issuecomment-682639979">clever</a> 
 way to accomplish this, using Apache modules only:
 
